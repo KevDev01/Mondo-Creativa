@@ -160,7 +160,6 @@ body {
 
 /*                 Estilo Body - Servicios                */
 
-
 .servflex {
     display: flex;
     width: 100%;
@@ -224,6 +223,12 @@ h3 {
     font-family: 'Poppins', sans-serif;
     font-style: italic;
 }
+.card:hover{
+    transform: scale(1.2,1.2);
+    border: solid;
+    border-color: white;
+    border-width: thick;
+}
 
 /*                 Estilo Body - CLIENTES            */
 .textClientes {
@@ -244,6 +249,12 @@ h3 {
     height: auto;
     margin: auto;
     padding: 2rem;
+}
+
+.fotos-clientes img:hover{
+    background-color: #D9CA4D;
+    border-radius: 50px;
+    background-image: linear-gradient(#D9CA4D, white);
 }
 
 
