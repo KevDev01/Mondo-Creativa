@@ -59,6 +59,7 @@ nav{
 ul li a{
     width: 300px;
     text-align: center;
+    height: auto;
     
 }
 
