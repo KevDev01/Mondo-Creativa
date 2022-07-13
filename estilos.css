@@ -409,36 +409,6 @@ aside img {
         max-width: 100%;
     }
 
-    .menu {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    li {
-        width: 100%;
-        text-align: center;
-        padding: 0%;
-        border-top: white;
-        border-top-style: solid;
-
-    }
-    .HOME {
-        background-color: #D9CA4D;
-    }
-    .NOSOTROS {
-        background-color: #D9CA4D;
-    }
-    .SERVICIOS {
-        background-color: #D9CA4D;
-    }
-    .CLIENTES {
-        background-color: #D9CA4D;
-    }
-    .CONTACTO {
-        background-color: #D9CA4D;
-    }
     
     /* Estilo Index */
     .Texto1 {
