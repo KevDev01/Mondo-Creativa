@@ -17,6 +17,7 @@
 .body {
     background-color: white;
     width: 100%;
+    margin: 0;
 }
 main {
     grid-area: main;
@@ -34,59 +35,31 @@ header {
     text-align: center;
 }
 
-nav {
-    background-color: #D9CA4D;
+/*     NAV Style */
+
+nav{
+    width: 100%;
+}
+ .navbar{
     grid-area: nav;
-    width: 100%;
-}
-.menu {
-    background-color: #D9CA4D;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
+    padding: 0;
 }
 
-li {
+ .nav__color{
     background-color: #D9CA4D;
+   
+ }
+ .textnav{
     font-family: 'Poppins', sans-serif;
-    list-style: none;
-    text-decoration: none;
-    width: 20%;
-    height: 1.5rem;
-    padding: 1rem;
-    text-align: center;
-    text-decoration-line: none;
     font-weight: bold;
-}
-
-li a {
-    text-decoration: none;
-    color: black;
-
-}
-
-.HOME {
+ }
+ .navbar .nav-item:hover {
     background-color: white;
-}
-
-ul li:hover {
-    background-color: white;
-}
-
-.NOSOTROS {
-    background-color: white;
-}
-
-.SERVICIOS {
-    background-color: white;
-}
-
-.CLIENTES {
-    background-color: white;
-}
-
-.CONTACTO {
-    background-color: white;
+ }
+ul li a{
+    width: 300px;
+    text-align: center;
+    
 }
 
 
