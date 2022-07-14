@@ -59,9 +59,9 @@ nav{
 ul li a{
     width: 300px;
     text-align: center;
-    height: auto;
     
 }
+
 
 
 /* Estilos Footer */
@@ -102,13 +102,6 @@ body {
     font-weight: bold;
 }
 
-/* Imagen central */
-.central {
-    display: block;
-    margin: 1rem 5%;
-    width: 90%;
-
-}
 
 /* Texto 2 */
 .Texto2 {
@@ -117,7 +110,8 @@ body {
     font-style: italic;
     font-weight: 200;
     text-align: right;
-    margin-right: 5rem;
+    margin-top: 2rem;
+    margin-right: 10rem;
     margin-bottom: 2rem;
 }
 
@@ -316,7 +310,10 @@ aside img {
         display: flex;
         flex-direction: column;
     }
-
+    /* Estilo Nav */
+    .navbar{
+        padding: 10px
+    };
     
     /* Estilo Footer */
     .aside {
