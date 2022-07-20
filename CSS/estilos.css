@@ -138,7 +138,8 @@ body {
   margin: 5px;
   border-radius: 6px;
   overflow: hidden;
-  background: #007785; }
+  background: #007785;
+  position: relative; }
 
 .card img {
   width: 200px;
@@ -159,7 +160,8 @@ h3 {
   transform: scale(1.2, 1.2);
   border: solid;
   border-color: white;
-  border-width: thick; }
+  border-width: thick;
+  z-index: 1; }
 
 /*                 Estilo Body - CLIENTES            */
 .textClientes {
@@ -181,7 +183,7 @@ h3 {
 .fotos-clientes img:hover {
   background-color: #D9CA4D;
   border-radius: 50px;
-  background-image: linear-gradient(#D9CA4D, white); }
+  background-image: linear-gradient(#007785, white); }
 
 /* Estilo Main - CONTACTO */
 h1 {
@@ -199,15 +201,16 @@ h1 {
   flex-direction: column; }
 
 .formbox {
-  background-color: #007785;
-  border: none;
+  border-style: solid;
+  border-color: #007785;
+  border-width: medium;
   border-radius: 5px; }
 
 .button {
   padding: 0.5rem;
   margin-top: 1rem;
   margin-right: 1rem;
-  background-color: #D9CA4D;
+  background-color: #007785;
   color: white;
   border: none;
   border-radius: 5px; }
@@ -318,6 +321,12 @@ aside img {
   /* Estilo Index */
   .Texto1 {
     margin: 0.5rem; }
+  .carousel-inner img {
+    width: auto;
+    height: 225px;
+    max-height: 225px; }
+  .carousel-inner {
+    height: 200px; }
   /* Estilo Footer */
   .aside {
     background-color: #D9CA4D;

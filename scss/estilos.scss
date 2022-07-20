@@ -173,6 +173,7 @@ body {
     border-radius: 6px;
     overflow: hidden;
     background: #007785;
+    position: relative;
 }
 
 .card img {
@@ -197,6 +198,7 @@ h3 {
     border: solid;
     border-color: white;
     border-width: thick;
+    z-index: 1;
 }
 
 /*                 Estilo Body - CLIENTES            */
@@ -204,7 +206,6 @@ h3 {
     font-family: 'Poppins', sans-serif;
     padding-left: 10%;
     font-size: x-large;
-
 }
 
 .fotos-clientes {
@@ -223,7 +224,7 @@ h3 {
 .fotos-clientes img:hover{
     background-color: #D9CA4D;
     border-radius: 50px;
-    background-image: linear-gradient(#D9CA4D, white);
+    background-image: linear-gradient(#007785, white);
 }
 
 
@@ -246,8 +247,9 @@ h1 {
 }
 
 .formbox {
-    background-color: rgba(0, 119, 133, 40%);
-    border: none;
+    border-style: solid;
+    border-color: #007785;
+    border-width: medium;
     border-radius: 5px;
 }
 
@@ -255,7 +257,7 @@ h1 {
     padding: 0.5rem;
     margin-top: 1rem;
     margin-right: 1rem;
-    background-color: #D9CA4D;
+    background-color: #007785;
     color: white;
     border: none;
     border-radius: 5px;
@@ -395,6 +397,7 @@ aside img {
         margin: auto;
     }
 }
+
 /*           Media Query Mobile         */
 @media screen and (max-width: 480px) {
     /* Estilo layout */
@@ -407,11 +410,21 @@ aside img {
     header {
         max-width: 100%;
     }
+    
 
     
     /* Estilo Index */
     .Texto1 {
         margin: 0.5rem;
+    }
+    .carousel-inner img {
+        width: auto;
+        height: 225px;
+        max-height: 225px;
+    }
+    
+    .carousel-inner{
+     height: 200px;
     }
 
     /* Estilo Footer */
