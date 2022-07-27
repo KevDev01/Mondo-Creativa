@@ -72,7 +72,7 @@ body {
 /* Texto 1 */
 .Texto1 {
   font-family: 'Poppins', sans-serif;
-  font-size: x-large;
+  font-size: 20px;
   font-style: italic;
   font-weight: 200;
   margin: 2rem; }
@@ -83,7 +83,7 @@ body {
 /* Texto 2 */
 .Texto2 {
   font-family: 'Poppins', sans-serif;
-  font-size: x-large;
+  font-size: 20px;
   font-style: italic;
   font-weight: 200;
   text-align: right;
@@ -98,7 +98,7 @@ body {
   padding-right: 10%;
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  font-size: x-large;
+  font-size: 20px;
   line-height: 60px; }
 
 /*                 Estilo Body - Servicios                */
@@ -167,34 +167,32 @@ h3 {
 .textClientes {
   font-family: 'Poppins', sans-serif;
   padding-left: 10%;
-  font-size: x-large; }
+  font-size: 20px; }
 
 .fotos-clientes {
   display: flex;
   text-align: center;
   width: 100%; }
-
-.fotos-clientes img {
-  width: 200px;
-  height: auto;
-  margin: auto;
-  padding: 2rem; }
-
-.fotos-clientes img:hover {
-  background-color: #D9CA4D;
-  border-radius: 50px;
-  background-image: linear-gradient(#007785, white); }
+  .fotos-clientes img {
+    width: 200px;
+    height: auto;
+    margin: auto;
+    padding: 2rem; }
+    .fotos-clientes img:hover {
+      background-color: #D9CA4D;
+      border-radius: 50px;
+      background-image: linear-gradient(#007785, white); }
 
 /* Estilo Main - CONTACTO */
 h1 {
   margin: 2rem;
   font-family: 'Poppins', sans-serif;
-  font-size: medium; }
+  font-size: 18px; }
 
 .Formulario {
   margin: 2rem;
   font-family: 'Poppins', sans-serif;
-  font-size: small; }
+  font-size: 13px; }
 
 .boxes {
   display: flex;
@@ -225,17 +223,17 @@ footer {
 
 .tel__redes {
   font-family: 'Poppins', sans-serif;
-  font-size: large;
+  font-size: 19px;
   font-weight: bold;
   text-align: center; }
 
 .redes {
-  font-size: x-large;
+  font-size: 20px;
   text-align: center; }
 
 .domicilio {
   font-family: 'Poppins', sans-serif;
-  font-size: large;
+  font-size: 19px;
   font-weight: light;
   text-align: center;
   padding-right: 6rem;
@@ -245,7 +243,7 @@ footer {
   font-weight: bolder; }
 
 aside img {
-  width: 7rem;
+  width: 150px;
   padding: 2rem; }
 
 /*           Media Query Tablet         */
@@ -270,10 +268,10 @@ aside img {
     flex-direction: column;
     text-align: center; }
   .tel__redes {
-    font-size: small; }
+    font-size: 13px; }
   .domicilio {
     padding: 0;
-    font-size: small; }
+    font-size: 13px; }
   /* Estilo Index */
   .Texto1 {
     margin: 1rem; }
@@ -282,7 +280,7 @@ aside img {
     margin: 2%;
     font-family: 'Poppins', sans-serif;
     text-align: justify;
-    font-size: large;
+    font-size: 19px;
     line-height: 30px; }
   /* Estilo Servicios */
   .servflex {
@@ -298,16 +296,16 @@ aside img {
   /* Estilo Clientes */
   .textClientes {
     font-family: 'Poppins', sans-serif;
-    font-size: x-large;
+    font-size: 20px;
     text-align: center;
     padding: 0; }
   .fotos-clientes {
     display: grid;
     grid-template-columns: 1fr 1fr; }
-  .fotos-clientes img {
-    width: 200px;
-    height: auto;
-    margin: auto; } }
+    .fotos-clientes img {
+      width: 200px;
+      height: auto;
+      margin: auto; } }
 
 /*           Media Query Mobile         */
 @media screen and (max-width: 480px) {
@@ -321,12 +319,12 @@ aside img {
   /* Estilo Index */
   .Texto1 {
     margin: 0.5rem; }
-  .carousel-inner img {
-    width: auto;
-    height: 225px;
-    max-height: 225px; }
   .carousel-inner {
     height: 200px; }
+    .carousel-inner img {
+      width: auto;
+      height: 225px;
+      max-height: 225px; }
   /* Estilo Footer */
   .aside {
     background-color: #D9CA4D;
@@ -344,7 +342,7 @@ aside img {
     margin: 2%;
     font-family: 'Poppins', sans-serif;
     text-align: justify;
-    font-size: large;
+    font-size: 19px;
     line-height: 30px; }
   /* Estilo Servicios */
   .servflex {
@@ -360,12 +358,12 @@ aside img {
   .textClientes {
     font-family: 'Poppins', sans-serif;
     padding-left: 10%;
-    font-size: large; }
+    font-size: 19px; }
   .fotos-clientes {
     display: flex;
     flex-direction: column; }
-  .fotos-clientes img {
-    width: 200px;
-    height: auto;
-    margin: auto;
-    padding: 2rem; } }
+    .fotos-clientes img {
+      width: 300px;
+      height: auto;
+      margin: auto;
+      padding: 2rem; } }
