@@ -1,0 +1,69 @@
+/*                 Estilo Body - Servicios                */
+.servflex {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.containers{
+    display: grid;
+    grid-template-rows: auto;
+}
+/* Sección Para Empresas */
+.pe {
+    grid-area: pe;
+    text-align: center;
+    margin: auto;
+}
+
+.pe-container {
+    @extend .containers;
+    grid-template-columns: repeat(3, 1fr);
+    width: 66%;
+}
+
+/* Sección Para Tí */
+.pt {
+    @extend .pe
+}
+
+.pt-container {
+    @extend .containers;
+    grid-template-columns: repeat(2, 1fr);
+    width: 33%;
+}
+
+.card {
+    height: 300px;
+    width: 230px;
+    margin: 5px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: $secondary-color;
+    position: relative;
+    & img {
+        width: 200px;
+        height: auto;
+        padding: 1em 1em 1em 1em;
+    }
+    &:hover {
+        transform: scale(1.2, 1.2);
+        border: solid;
+        border-color: white;
+        border-width: thick;
+        z-index: 1;
+    }
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: bold;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}

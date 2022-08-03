@@ -1,0 +1,43 @@
+/* Estilos Footer */
+aside {
+    background-color: #D9CA4D;
+    grid-area: aside;
+    & img {
+        width: 150px;
+        padding: 2rem;
+    }
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    background-color: $primary-color;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tel__redes {
+    font-family: 'Poppins', sans-serif;
+    font-size: $L-fontsize;
+    font-weight: bold;
+    text-align: center;
+}
+
+.redes {
+    font-size: $XL-fontzise;
+    text-align: center;
+}
+
+.domicilio {
+    font-family: 'Poppins', sans-serif;
+    font-size: $L-fontsize;
+    font-weight: light;
+    text-align: center;
+    padding-right: 6rem;
+    padding-left: 10rem;
+}
+
+.direccion {
+    font-weight: bolder;
+}

@@ -1,0 +1,195 @@
+/*           Media Query Tablet         */
+@media screen and (max-width: 768px) {
+
+    /* Estilo layout */
+    .layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Estilo Nav */
+    .navbar {
+        padding: 10px
+    }
+
+    /* Estilo Footer */
+    .aside {
+        background-color: $primary-color;
+        align-items: center;
+    }
+
+    .iso {
+        padding: .5rem;
+        margin: auto;
+        display: block;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tel__redes {
+        font-size: $S-fontsize;
+    }
+
+    .domicilio {
+        padding: 0;
+        font-size: $S-fontsize;
+    }
+
+    /* Estilo Index */
+    .Texto1 {
+        margin: 1rem;
+    }
+
+    /* Estilo Nosotros */
+    .textNosotros {
+        margin: 2%;
+        font-family: 'Poppins', sans-serif;
+        text-align: justify;
+        font-size: $L-fontsize;
+        line-height: 30px;
+    }
+
+    /* Estilo Servicios */
+    .servflex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pe-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 3rem;
+    }
+
+    .pt-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Estilo Clientes */
+    .textClientes {
+        font-family: 'Poppins', sans-serif;
+        font-size: $XL-fontzise;
+        text-align: center;
+        padding: 0;
+    }
+
+    .fotos-clientes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        & img {
+            width: 200px;
+            height: auto;
+            margin: auto;
+        }
+    }
+}
+
+/*           Media Query Mobile         */
+@media screen and (max-width: 480px) {
+
+    /* Estilo layout */
+    .layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Estilo header */
+    header {
+        max-width: 100%;
+    }
+
+
+
+    /* Estilo Index */
+    .Texto1 {
+        margin: 0.5rem;
+    }
+    .Texto2{
+        margin-right: 0.5rem;
+    }
+
+    .carousel-inner {
+        height: 200px;
+
+        & img {
+            width: auto;
+            height: 225px;
+            max-height: 225px;
+        }
+    }
+
+    /* Estilo Footer */
+    .aside {
+        background-color: $primary-color;
+        align-items: center;
+    }
+
+    .iso {
+        padding: .5rem;
+        margin: auto;
+        display: block;
+    }
+
+    .tel__redes {
+        display: none;
+    }
+
+    .domicilio {
+        display: none;
+    }
+
+    /* Estilo Nosotros */
+    .textNosotros {
+        margin: 2%;
+        font-family: 'Poppins', sans-serif;
+        text-align: justify;
+        font-size: $L-fontsize;
+        line-height: 30px;
+    }
+
+    /* Estilo Servicios */
+    .servflex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pe-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pt-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Estilo Clientes */
+    .textClientes {
+        font-family: 'Poppins', sans-serif;
+        padding-left: 10%;
+        font-size: $L-fontsize;
+    }
+
+    .fotos-clientes {
+        display: flex;
+        flex-direction: column;
+        & img {
+            width: 300px;
+            height: auto;
+            margin: auto;
+            padding: 2rem;
+        }
+    }
+    /* Estilo Contacto */
+    .button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,38 @@
+/* Estilos Header */
+header {
+    background-color: $primary-color;
+    grid-area: header;
+    text-align: center;
+    & img {
+        width: 9rem;
+    }
+}
+
+/*     NAV Style */
+
+nav {
+    width: 100%;
+}
+
+.navbar {
+    grid-area: nav;
+    padding: 0;
+    & .nav-item:hover {
+        background-color: white;
+    }
+}
+
+.nav__color {
+    background-color: $primary-color;
+}
+
+.textnav {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+
+ul li a {
+    width: 200px;
+    text-align: center;
+}

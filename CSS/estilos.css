@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Variables universales */
 * {
   padding: 0;
   margin: 0; }
@@ -27,6 +28,8 @@ header {
   background-color: #D9CA4D;
   grid-area: header;
   text-align: center; }
+  header img {
+    width: 9rem; }
 
 /*     NAV Style */
 nav {
@@ -35,6 +38,8 @@ nav {
 .navbar {
   grid-area: nav;
   padding: 0; }
+  .navbar .nav-item:hover {
+    background-color: white; }
 
 .nav__color {
   background-color: #D9CA4D; }
@@ -43,178 +48,20 @@ nav {
   font-family: 'Poppins', sans-serif;
   font-weight: bold; }
 
-.navbar .nav-item:hover {
-  background-color: white; }
-
 ul li a {
-  width: 300px;
+  width: 200px;
   text-align: center; }
 
 /* Estilos Footer */
 aside {
   background-color: #D9CA4D;
   grid-area: aside; }
-
-footer {
-  background-color: #D9CA4D;
-  grid-area: footer; }
-
-header img {
-  width: 9rem; }
-
-/*                  Estilo Body - Index               */
-body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; }
-
-/* Texto 1 */
-.Texto1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 200;
-  margin: 2rem; }
-
-.Bold {
-  font-weight: bold; }
-
-/* Texto 2 */
-.Texto2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 200;
-  text-align: right;
-  margin-top: 2rem;
-  margin-right: 10rem;
-  margin-bottom: 2rem; }
-
-/*                    Estilo Body - Nosotros              */
-.textNosotros {
-  margin: 2rem 3rem;
-  padding-left: 10%;
-  padding-right: 10%;
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  font-size: 20px;
-  line-height: 60px; }
-
-/*                 Estilo Body - Servicios                */
-.servflex {
-  display: flex;
-  width: 100%;
-  margin-bottom: 2rem;
-  text-align: center; }
-
-/* Sección Para Empresas */
-.pe {
-  grid-area: pe;
-  text-align: center;
-  margin: auto; }
-
-.pe-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  width: 66%; }
-
-/* Sección Para Tí */
-.pt {
-  grid-area: pt;
-  text-align: center;
-  margin: auto; }
-
-.pt-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  width: 33%; }
-
-.card {
-  height: 300px;
-  width: 250px;
-  margin: 5px;
-  border-radius: 6px;
-  overflow: hidden;
-  background: #007785;
-  position: relative; }
-
-.card img {
-  width: 200px;
-  height: auto;
-  padding: 1em 1em 1em 1em; }
-
-h2 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold; }
-
-h3 {
-  font-weight: bold;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-style: italic; }
-
-.card:hover {
-  transform: scale(1.2, 1.2);
-  border: solid;
-  border-color: white;
-  border-width: thick;
-  z-index: 1; }
-
-/*                 Estilo Body - CLIENTES            */
-.textClientes {
-  font-family: 'Poppins', sans-serif;
-  padding-left: 10%;
-  font-size: 20px; }
-
-.fotos-clientes {
-  display: flex;
-  text-align: center;
-  width: 100%; }
-  .fotos-clientes img {
-    width: 200px;
-    height: auto;
-    margin: auto;
+  aside img {
+    width: 150px;
     padding: 2rem; }
-    .fotos-clientes img:hover {
-      background-color: #D9CA4D;
-      border-radius: 50px;
-      background-image: linear-gradient(#007785, white); }
 
-/* Estilo Main - CONTACTO */
-h1 {
-  margin: 2rem;
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px; }
-
-.Formulario {
-  margin: 2rem;
-  font-family: 'Poppins', sans-serif;
-  font-size: 13px; }
-
-.boxes {
-  display: flex;
-  flex-direction: column; }
-
-.formbox {
-  border-style: solid;
-  border-color: #007785;
-  border-width: medium;
-  border-radius: 5px; }
-
-.button {
-  padding: 0.5rem;
-  margin-top: 1rem;
-  margin-right: 1rem;
-  background-color: #007785;
-  color: white;
-  border: none;
-  border-radius: 5px; }
-
-/*                 Estilo Footer           */
 footer {
+  grid-area: footer;
   display: flex;
   background-color: #D9CA4D;
   justify-content: flex-end;
@@ -242,9 +89,150 @@ footer {
 .direccion {
   font-weight: bolder; }
 
-aside img {
-  width: 150px;
-  padding: 2rem; }
+/*                  Estilo Body - Home               */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+/* Texto 1 */
+.Texto1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 200;
+  margin: 0.5rem 2rem 2rem 2rem; }
+
+.Bold {
+  font-weight: bold; }
+
+/* Texto 2 */
+.Texto2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 200;
+  text-align: right;
+  margin-top: 2rem;
+  margin-right: 10rem;
+  margin-bottom: 2rem; }
+
+/*                    Estilo Body - Nosotros              */
+.textNosotros {
+  margin: 0.5rem 3rem 2rem 3rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  line-height: 60px; }
+
+/*                 Estilo Body - Servicios                */
+.servflex {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: center; }
+
+.containers, .pe-container, .pt-container {
+  display: grid;
+  grid-template-rows: auto; }
+
+/* Sección Para Empresas */
+.pe, .pt {
+  grid-area: pe;
+  text-align: center;
+  margin: auto; }
+
+.pe-container {
+  grid-template-columns: repeat(3, 1fr);
+  width: 66%; }
+
+/* Sección Para Tí */
+.pt-container {
+  grid-template-columns: repeat(2, 1fr);
+  width: 33%; }
+
+.card {
+  height: 300px;
+  width: 230px;
+  margin: 5px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #007785;
+  position: relative; }
+  .card img {
+    width: 200px;
+    height: auto;
+    padding: 1em 1em 1em 1em; }
+  .card:hover {
+    transform: scale(1.2, 1.2);
+    border: solid;
+    border-color: white;
+    border-width: thick;
+    z-index: 1; }
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold; }
+
+h3 {
+  font-weight: bold;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic; }
+
+/*                 Estilo Body - CLIENTES            */
+.textClientes {
+  font-family: 'Poppins', sans-serif;
+  padding-left: 10%;
+  font-size: 20px; }
+
+.fotos-clientes {
+  display: flex;
+  text-align: center;
+  width: 100%; }
+  .fotos-clientes img {
+    width: 200px;
+    height: auto;
+    margin: auto;
+    padding: 2rem; }
+    .fotos-clientes img:hover {
+      background-color: #D9CA4D;
+      border-radius: 50px;
+      background-image: linear-gradient(#007785, white); }
+
+/* Estilo Main - CONTACTO */
+h1 {
+  margin: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  text-align: center; }
+
+.Formulario {
+  margin: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px; }
+
+.boxes {
+  display: flex;
+  flex-direction: column; }
+
+.formbox {
+  border-style: solid;
+  border-color: #007785;
+  border-width: medium;
+  border-radius: 5px; }
+
+.button {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  background-color: #007785;
+  color: white;
+  border: none;
+  border-radius: 5px; }
 
 /*           Media Query Tablet         */
 @media screen and (max-width: 768px) {
@@ -319,6 +307,8 @@ aside img {
   /* Estilo Index */
   .Texto1 {
     margin: 0.5rem; }
+  .Texto2 {
+    margin-right: 0.5rem; }
   .carousel-inner {
     height: 200px; }
     .carousel-inner img {
@@ -366,4 +356,9 @@ aside img {
       width: 300px;
       height: auto;
       margin: auto;
-      padding: 2rem; } }
+      padding: 2rem; }
+  /* Estilo Contacto */
+  .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; } }

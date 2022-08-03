@@ -1,0 +1,25 @@
+/*                 Estilo Body - CLIENTES            */
+.textClientes {
+    font-family: 'Poppins', sans-serif;
+    padding-left: 10%;
+    font-size: $XL-fontzise;
+}
+
+.fotos-clientes {
+    display: flex;
+    text-align: center;
+    width: 100%;
+
+    & img {
+        width: 200px;
+        height: auto;
+        margin: auto;
+        padding: 2rem;
+
+        &:hover {
+            background-color: #D9CA4D;
+            border-radius: 50px;
+            background-image: linear-gradient($secondary-color, white);
+        }
+    }
+}

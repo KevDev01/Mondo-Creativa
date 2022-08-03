@@ -1,0 +1,32 @@
+/*                  Estilo Body - Home               */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Texto 1 */
+.Texto1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: $XL-fontzise;
+    font-style: italic;
+    font-weight: 200;
+    margin: 0.5rem 2rem 2rem 2rem;
+}
+
+.Bold {
+    font-weight: bold;
+}
+
+/* Texto 2 */
+.Texto2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: $XL-fontzise;
+    font-style: italic;
+    font-weight: 200;
+    text-align: right;
+    margin-top: 2rem;
+    margin-right: 10rem;
+    margin-bottom: 2rem;
+}
