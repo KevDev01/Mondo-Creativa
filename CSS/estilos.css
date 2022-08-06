@@ -235,7 +235,7 @@ h1 {
   border-radius: 5px; }
 
 /*           Media Query Tablet         */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   /* Estilo layout */
   .layout {
     display: flex;
@@ -280,7 +280,8 @@ h1 {
     margin-bottom: 3rem; }
   .pt-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; }
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 3rem; }
   /* Estilo Clientes */
   .textClientes {
     font-family: 'Poppins', sans-serif;
