@@ -16,12 +16,25 @@
     .aside {
         background-color: $primary-color;
         align-items: center;
+        
     }
+
+    main{
+        min-height: auto;
+    }
+
+    h1{
+        margin: auto;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
 
     .iso {
         padding: .5rem;
         margin: auto;
         display: block;
+
     }
 
     footer {
@@ -39,9 +52,15 @@
         font-size: $S-fontsize;
     }
 
-    /* Estilo Index */
+    /* Estilo Home */
     .Texto1 {
         margin: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .Texto2{
+        margin-top: 0.5rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
     }
 
     /* Estilo Nosotros */
@@ -51,6 +70,9 @@
         text-align: justify;
         font-size: $L-fontsize;
         line-height: 30px;
+    }
+    .imgnosotros{
+        width: 100%;
     }
 
     /* Estilo Servicios */
@@ -77,6 +99,7 @@
         font-size: $XL-fontzise;
         text-align: center;
         padding: 0;
+        line-height: 5px;
     }
 
     .fotos-clientes {
@@ -89,6 +112,11 @@
             margin: auto;
         }
     }
+}
+
+/* Estilo Contacto */
+.formbox{
+    margin: 5px;
 }
 
 /*           Media Query Mobile         */
@@ -152,6 +180,7 @@
         text-align: justify;
         font-size: $L-fontsize;
         line-height: 30px;
+        margin-bottom: 2rem;
     }
 
     /* Estilo Servicios */
@@ -188,6 +217,7 @@
         }
     }
     /* Estilo Contacto */
+    
     .button{
         display: flex;
         flex-direction: column;
